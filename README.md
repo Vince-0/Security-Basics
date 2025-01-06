@@ -1,5 +1,5 @@
-# Security-Basics
-## Security basics for any fresh installs
+# Security Basics
+## Security basics for a fresh Linux install
 
 Author [https://github.com/Vince-0](https://github.com/Vince-0/Projects)
 
