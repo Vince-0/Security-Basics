@@ -52,3 +52,5 @@ Check that sshd restarted without any errors and its Active status is "active (r
 `systemctl status sshd`
 
 #### Firewall:
+
+
