@@ -133,6 +133,3 @@ Check the logs
 Fail2ban will add a chain f2b-sshd and block any offending source IPs with a target of REJECT
 `iptables -nL`
 
-I still find many SSH log in attempts in the fail2ban.log that will not be caught and banned because attackers use a slow, staggered attempt schedule.
-
-In this case it is best to dissalow SSH password authentication altogether and use keys only.
