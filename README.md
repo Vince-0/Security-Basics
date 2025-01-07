@@ -35,10 +35,6 @@ Add the line to disallow root login via SSH
 
 `PermitRootLogin prohibit-password`
 
-For preferred key security remove password log in altogether and use only key files
-
-`PasswordAuthentication no`
-
 On your client computer generate a public SSH key file for your current user
 
 `ssh-keygen`
@@ -55,6 +51,14 @@ Check that sshd restarted without any errors and its Active status is "active (r
 
 `systemctl status sshd`
 
+For a more secure SSH server disallow password authentication and use only key files
+```
+PasswordAuthentication no
+ChallengeResponseAuthentication no
+PasswordAuthentication no
+UsePAM no
+PermitRootLogin no
+```
 
 ## Firewall
 Debian has iptables installed by default but it allows all connections.
@@ -128,3 +132,7 @@ Check the logs
 
 Fail2ban will add a chain f2b-sshd and block any offending source IPs with a target of REJECT
 `iptables -nL`
+
+I still find many SSH log in attempts in the fail2ban.log that will not be caught and banned because attackers use a slow, staggered attempt schedule.
+
+In this case it is best to dissalow SSH password authentication altogether and use keys only.
