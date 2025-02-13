@@ -100,6 +100,9 @@ Auto restore on boot by installing iptables-persistent. It will ask you to save 
 
 `apt install iptables-persistent`
 
+Advanced configuration
+[Kilo's IPtables DDoS Protection](https://kiloai.hashnode.dev/iptables-ddos-protection-the-best-rules-to-mitigate-ddos-attacks)
+
 
 ## Fail2Ban
 [Fail2Ban](https://github.com/fail2ban/fail2ban) 
