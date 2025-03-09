@@ -79,7 +79,7 @@ Block port numbers for common services like SSH 22 tcp, FTP 21 tcp, MySQL 3306 t
 Set defaults to drop all other connections
 
 ```
-iptables -P INPUT DROP
+iptables -A INPUT -j REJECT --reject-with icmp-host-prohibited
 iptables -P FORWARD DROP
 iptables -P OUTPUT ACCEPT
 ```
