@@ -1,9 +1,9 @@
 # Linux Security Basics
 ## Security basics for a fresh Linux install
 
-Author [https://github.com/Vince-0](https://github.com/Vince-0/Projects)
+Notes for the basic security configurations on any fresh Linux server. I like to use Debian.
 
-My notes for basic security configurations on any fresh Linux server. I like to use Debian.
+Author [https://github.com/Vince-0](https://github.com/Vince-0/Projects)
 
 
 ## User
